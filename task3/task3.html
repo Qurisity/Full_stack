@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <form action="" method="post">
+            <div class="all">
+                <div class="box1">
+                    <h2>Registration form</h2>
+                    <div class="top">
+                        <img src="img/icons8-male-user-50.png" alt="">
+                        <input type="text" placeholder="Username" id="username" required >
+                    </div>
+                    <div class="mid">
+                        <img src="img/icons8-mail-48.png" alt="" class="w">
+                        <input type="email" required placeholder="Email address" id="userEmail">
+                    </div>             
+                    <div class="bot">
+                        <img src="img/icons8-password-48.png" alt="">
+                        <input type="password" required placeholder="Password" id="pass">
+                        <input type="password" required placeholder="Confirm password" id="pass2">
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2>Personal Details</h2>
+                    <div class="top">
+                        <input type="text" required placeholder="First Name" id="frName">
+                        <input type="text" required placeholder="Last Name" id="lsName"> 
+                    </div>
+                    <div> 
+                        <select name="gender" id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <label for="new">  
+                    <input type="checkbox" id="new" required>
+                    I want to receive news and special offers
+                </label>
+                <label for="terms">
+                    <input type="checkbox" id="terms" required>
+                    I agree with the Terms
+                </label>
+            </div>
+        </form>
+        <hr>
+        <div class="sub">
+            <input type="submit" id="submit">
+        </div>
+    </div>
+</body>
+</html>
