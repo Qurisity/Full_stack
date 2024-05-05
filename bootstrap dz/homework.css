@@ -1,0 +1,12 @@
+td:nth-child(3){
+    color:transparent;
+}
+
+td:nth-child(4){
+    display: none;
+}
+
+th:nth-child(3){
+    color: transparent;
+}
+

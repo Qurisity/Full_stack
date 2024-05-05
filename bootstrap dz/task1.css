@@ -1,0 +1,136 @@
+.imgs {
+  opacity: 0.8;
+}
+
+.date {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.inp {
+  display: flex;
+  gap: 70px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.inp div:nth-child(3) label {
+  display: block;
+}
+
+.inp div:nth-child(4) label {
+  display: block;
+}
+
+.inp label {
+  color: rgb(185, 182, 182);
+}
+
+.inp input {
+  outline: none;
+}
+
+#hmwr {
+  padding: 5px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(4, 97, 123);
+}
+
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+th {
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+
+.bg-info {
+  opacity: 0.5;
+  color: white;
+}
+
+
+#specifyColor {
+  accent-color: red;
+}
+
+#specifyColor2 {
+  accent-color: rgb(255, 221, 0);
+}
+
+#specifyColor3 {
+  accent-color: green;
+}
+
+#com {
+  width: 90%;
+}
+
+select {
+  width: 70px;
+  height: 50px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+}
+
+/* Показати форміу при виборі чекбокса */
+#show-popup:checked~.popup-overlay,
+#show-popup:checked~.popup-overlay+.popup-form {
+  display: block;
+}
+
+#show-popup {
+  position: absolute;
+  left: -9999px;
+}
+
+.label {
+  background-color: rgb(0, 183, 255);
+  color: black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+}
+
+#submit {
+  background-color: rgb(0, 183, 255);
+  color: black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  border: none;
+  outline: none;
+}
+
