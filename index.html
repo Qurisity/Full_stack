@@ -1,34 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="cont">
-        <form action="" method="post">
-            <h1>
-                credit  card details
-            </h1>
-            <label for="userCardnum">Card Number</label>
-            <input type="text" placeholder="Enter your card number" id="userCardnum" name="userCardnum" required>
-            <label for="userName">Name On Card</label>
-            <input type="text" name="username" id="userName" placeholder="Name Surname" required>
-            <div class="bot">
-                <div>
-                    <label for="Exdate">Expiry Date</label>
-                    <input type="text" required placeholder="02" id="Exdate" name="Exdate">
-                </div>
-                <div>
-                    <input type="text" required placeholder="2017">
-                </div>               
-                <div>
-                    <label for="CVV">CVV / CVN</label>
-                    <input type="text" id="CVV" name="CVV" required placeholder="***">
-                </div>
-            </div>
-        </form>
-    </div>
+    <script>
+        // let x = +prompt("Enter your age: ")
+        // if (x <= 12){
+        //     alert("You are child")
+        // }
+        // else{
+        //     if (x <= 18){
+        //         alert("You are teenager")
+        //     }
+        //     else{
+        //         if (x <= 60){
+        //             alert("You are adult")
+        //         }
+        //         else{
+        //             alert("You are too old")
+        //         }
+        //     }
+        // }
+
+        // let number = +prompt("Enter number: ")
+        // switch (number) {
+        //     case 0:
+        //         alert("Enter from 1 - 9")
+        //         break;
+        //     case 1:
+        //         alert("!")
+        //         break;
+        //     case 2:
+        //         alert("@")
+        //         break;
+        //     case 3:
+        //         alert("£")
+        //         break;
+        //     case 4:
+        //         alert("$")
+        //         break;
+        //     case 5:
+        //         alert("%")
+        //         break;
+        //     case 6:
+        //         alert("^")
+        //         break;
+        //     case 7:
+        //         alert("&")
+        //         break;
+        //     case 8:
+        //         alert("*")
+        //         break;
+        //     case 9:
+        //         alert("(")
+        //         break;
+        //     default:
+        //         alert("Enter number between 1-9")
+        //         break;
+        // }
+
+        // let number = prompt("Введіть тризначне число:");
+        // if (number.length !== 3 || isNaN(number)) {
+        //     alert("Будь ласка, введіть коректне тризначне число.");
+        // } else {
+        //     let digit1 = number.charAt(0);
+        //     let digit2 = number.charAt(1);
+        //     let digit3 = number.charAt(2);
+        //     if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
+        //         alert("У введеному числі є однакові цифри.");
+        //     } else {
+        //         alert("У введеному числі немає однакових цифр.");
+        //     }
+        // }
+
+        // let year = prompt("Введіть рік:");
+
+        // if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+        //     alert(year + " - високосний рік.");
+        // } else {
+        //     alert(year + " - не високосний рік.");
+        // }
+
+        // let number = prompt("Введіть п'ятирозрядне число:");
+
+        // if (!isNaN(number) && number.length === 5) {
+
+        // } else {
+        //     alert("Будь ласка, введіть п'ятирозрядне число.");
+        // }
+        // if (number[0] === number[4] && number[1] === number[3]) {
+        //     alert(number + " - паліндром.");
+        // } else {
+        //     alert(number + " - не паліндром.");
+        // }
+
+        // let dolar = +prompt("Enter how much you want to convert: ")
+        // let eur = 0.93;
+        // let uan = 39.43;
+        // let azn = 1.70;
+        // let ask = prompt("Choose currency (EUR, UAN, AZN): ")
+        // switch (ask) {
+        //     case "eur":
+        //         alert(dolar * eur + " eur") 
+        //         break;
+        //     case "uan":
+        //         alert(dolar * uan + " uan")
+        //         break;
+        //     case "azn":
+        //         alert(dolar * azn + " azn")
+        //         break;
+        //     default:
+        //         alert("N/A")
+        //         break;
+        // }
+
+        let buy = +prompt("What is your final price: ")
+        let three = buy * 3 /100
+        if ((buy >= 200) && (buy <= 300)){
+            alert(buy - three)
+        }
+        else{
+            alert("no")
+        }
+    </script>
 </body>
+
 </html>
